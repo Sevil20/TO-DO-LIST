@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./reset css">
+    <link rel="shortcut icon" href="https://imgs.search.brave.com/elNbELF7vzk2KoUmV1SBrXN2_k3e3oEFSXDUHVBcpwg/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9jbGlw/Z3JvdW5kLmNvbS9p/bWFnZXMvZ3JvdXAt/cHJvamVjdC1jbGlw/YXJ0LTUucG5n" type="image/x-icon">
+    <link rel="stylesheet" href="./reset.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../css/index.css">
-    <script  defer src="../css/index.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <script  defer src="./index.js"></script>
     <title>Layihe</title>
 </head>
 <body>
@@ -15,19 +16,26 @@
         <div class="todo-container">
             <div class="yellow"></div>
             <h1>To-Do List</h1>
-            <img class="bottom-img" src="../img/Group 38 (1).png">
-            <img class="top-img" style="display: none;" src="../img/Group 91.png">
-            <div class="input-container"><input id="myInput"  type="text" class="input"><button class="x-btn-1">X</button></div>
-            <div  class="lists">
+            <img class="bottom-img" src="./img/Group 91.png">
+            <img class="top-img" style="display: none;" src="./img/Group 73.png">
+            <div class="input-container"><input id="myInput" placeholder="Some text..." type="text" class="input"><button class="x-btn-1">X</button></div>
+            <div style="margin-top: 30px;"  class="lists">
                 <ul class="add-list">
-                   <!-- <button id="btn" style="display: block;" class="x-btn"></button> -->
                 </ul>
             </div>
-            <div class="add">
+            <div class="success">
+                <div class="suc-container done">
+                    <button class="successful"><i class='bx bx-check'></i></button>
+                    <p class="correct">DELETE</p>
+                    <p class="task">Task deleted successfully</p>
+                    <button class="okey1">OK</button>
+                </div>
+            </div>
+            <div id="myBtn" class="add">
                 <div class="button">
                     <p class="plus">+</p>
                 </div class="mor">
-                <p id="addTo">Добавить</p>
+                <p id="addTo">Add</p>
             </div>
     </div>
     </div>
