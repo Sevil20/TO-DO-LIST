@@ -33,7 +33,8 @@ list.addEventListener("click", (e) => {
       container.style.width = '410px';
       myInput.style.width = '78%';
       xbtn1.style.width ='12%';
-      changeBtn.style.width = '95%';
+      changeBtn.style.width = '90%';
+      addList.style.border = 'none';
     })
   }
  })
@@ -44,9 +45,11 @@ btn.addEventListener("click", (e) =>{
   } else {
     list.style.display = "block";
     addList.style.display = "block";
-    list.style.backgroundColor = '#FFDC40';
+    // list.style.backgroundColor = '#FFDC40';
+    list.style.border = '2px solid gray';
+    list.style.borderRadius = '10px';
     let value = myInput.value;
-    list.innerHTML += `<li style="padding-top:5px;">${value} <button class="x-btn">X</button></li>`;
+    list.innerHTML += `<li style="padding-top:8px; width:80%;">${value} <button class="x-btn">X</button></li>`;
     list.style.display = "flex";
     list.style.flexDirection = "column";
     list.style.justifyContent = "space-evenly";
@@ -57,8 +60,7 @@ btn.addEventListener("click", (e) =>{
     changeBtn.style.width = '95%';
     myInput.value = '';
     if (value.length > 20) {
-      list.innerHTML += `<li>${value} <button class="x-btn">X</button></li>`;
-      list.style.width = "80%";
+      list.style.width = "95%";
     }
   }
 });
@@ -69,7 +71,7 @@ if (
     bottomImgBtn.style.display = "none";
     let arr = [];
   const data = [...list.children];
-    data.shift();
+    // data.shift();
   data.forEach(item =>{
     arr.push(item.innerHTML);
   })
@@ -77,7 +79,7 @@ if (
   console.log(arr)
   list.innerHTML = '';
   arr.forEach(item =>{
-    let li = `<li>${item}</li>`;
+    let li = `<li style="margin-bottom:0px;">${item}</li>`;
     list.innerHTML += li;
   })
   })
