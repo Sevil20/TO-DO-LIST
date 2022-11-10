@@ -45,7 +45,6 @@ btn.addEventListener("click", (e) =>{
   } else {
     list.style.display = "block";
     addList.style.display = "block";
-    // list.style.backgroundColor = '#FFDC40';
     list.style.border = '2px solid gray';
     list.style.borderRadius = '10px';
     let value = myInput.value;
@@ -53,9 +52,9 @@ btn.addEventListener("click", (e) =>{
     list.style.display = "flex";
     list.style.flexDirection = "column";
     list.style.justifyContent = "space-evenly";
-    yellowDiv.style.width = '100%';
-    container.style.width = '480px';
-    myInput.style.width = '78%';
+    // yellowDiv.style.width = '100%';
+    // container.style.width = '480px';
+    // myInput.style.width = '78%';
     xbtn1.style.width ='12%';
     changeBtn.style.width = '95%';
     myInput.value = '';
@@ -65,30 +64,24 @@ btn.addEventListener("click", (e) =>{
   }
 });
 
-if (
   bottomImgBtn.addEventListener("click", () => {
-    topImgBtn.style.display = "block";
-    bottomImgBtn.style.display = "none";
     let arr = [];
-  const data = [...list.children];
+  const data = [...list?.children];
     // data.shift();
   data.forEach(item =>{
     arr.push(item.innerHTML);
   })
   arr.sort();
-  console.log(arr)
   list.innerHTML = '';
   arr.forEach(item =>{
     let li = `<li style="margin-bottom:0px;">${item}</li>`;
     list.innerHTML += li;
   })
   })
-) {
-}
-if (
+ 
+
+
   topImgBtn.addEventListener("click", () => {
-    bottomImgBtn.style.display = "block";
-    topImgBtn.style.display = "none";
     let arr = [];
     const data = [...list.children];
     data.forEach(item =>{
@@ -98,9 +91,26 @@ if (
     arr.reverse();
     list.innerHTML = '';
     arr.forEach(item =>{
-      let li = `<li>${item}</li>`;
+      let li = `<li style="margin-bottom:0px;" >${item}</li>`;
       list.innerHTML += li;
-    })
+        })
+  });
+  topImgBtn.addEventListener("click", () => {
+    bottomImgBtn.style.display = "block";
+    topImgBtn.style.display = "none";
+    let arr = [];
+    list.push(arr);
+    arr.forEach((item) => {
+        item.sort();
+        item.reverse();
+    });
+});
+if (
+  bottomImgBtn.addEventListener("click", () => {
+      topImgBtn.style.display = "block";
+      bottomImgBtn.style.display = "none";
   })
 ) {
 }
+ 
+

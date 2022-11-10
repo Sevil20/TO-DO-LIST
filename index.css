@@ -1,31 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-.container{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   margin-top: 232px;
-   margin-left: 658px;
-   width: 336px;
-   height: 236px;
-   border-radius: 10px;
-   border-color: gray;
-}
-.todo-container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+    margin-top: 232px;
+    margin-left: 647px;
+    width: 20%;
+    height: 200px;
+    border-radius: 0px;
+    border-color: gray;
+}
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px rgb(0 0 0 / 30%);
     border-radius: 10px;
-    width: 380px;
+    width: 25%;
     font-family: 'Roboto', sans-serif;
     position: fixed;
     font-weight: 600;
 }
 .todo-container .yellow{
-    width: 380px;
+    width: 100%;
 height: 30px;
 border-radius: 10px;
 background-color: #FFDC40;
@@ -233,11 +233,13 @@ li{
     margin-bottom: 10px;
     display: flex;
     justify-content: space-evenly;
+    text-align: center;
 }
 
-@media (max-width:1100px)  and (min-width:800px){
+@media (max-width:1200px)  and (min-width:800px){
     .todo-container{
         margin-right: 670px;
+        width: 36%;
     }
     .x-btn-1{
     border-color: gray;
@@ -259,9 +261,10 @@ li{
         margin-left: 147px;
     }
 }
-@media (max-width:810px)  and (min-width:400px){
+@media (max-width:820px)  and (min-width:400px){
     .todo-container{
         margin-right: 720px;
+        width: 50%;
     }
     .x-btn-1{
     border-color: gray;
